@@ -18,5 +18,5 @@ Add the following to your HUGO config file:
 You'll also need to add the Netlify Identity Widget to your head JS right before the `</body>` tag. 
 
 ```
-{{ partial "components/netlifycms" . }
+{{ partial "components/netlifycms" . }}
 ```

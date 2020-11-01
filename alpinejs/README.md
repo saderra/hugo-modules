@@ -3,14 +3,13 @@
 First, add the module import to your site or theme component's configuration's module section:
 
 ```toml
-[module]
-[[imports]]
-path = "github.com/saderra/hugo-modules/alpinejs"
+[[module.imports]]
+    path = "github.com/saderra/hugo-modules/ui"
 ```
 
 Then add the script source in the head section of your template:
 
 
 ```html
-{{ partial "components/alpinejs" . }
+{{ partial "components/alpinejs" . }}
 ```
