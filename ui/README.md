@@ -1,5 +1,17 @@
 # Saderra UI Starter Theme
 
+Load the theme as a module:
+
+```toml
+
+[module]
+
+  [[module.imports]]
+    path = "github.com/saderra/hugo-modules/ui"
+
+```
+
+
 Import it into your project, and then run:
 
 ```bash
