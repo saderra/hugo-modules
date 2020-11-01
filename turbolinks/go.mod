@@ -1,4 +1,4 @@
-module github.com/gohugoio/hugo-mod-jslibs/turbolinks
+module github.com/saderra/hugo-modules/turbolinks
 
 go 1.13
 
