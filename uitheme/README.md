@@ -7,7 +7,7 @@ Load the theme as a module:
 [module]
 
   [[module.imports]]
-    path = "github.com/saderra/hugo-modules/ui"
+    path = "github.com/saderra/hugo-modules/uitheme"
 
 ```
 
