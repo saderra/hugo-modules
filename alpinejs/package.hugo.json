@@ -1,0 +1,13 @@
+{
+	"comments": {
+		"dependencies": {},
+		"devDependencies": {}
+	},
+	"dependencies": {
+        "alpinejs": "^2.7.3"
+       },
+	"devDependencies": {
+	},
+	"name": "saderra-hugo-alpinejs",
+	"version": "0.1.0"
+}
