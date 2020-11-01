@@ -5,7 +5,7 @@ First, add the module import to your site or theme component's configuration's m
 ```toml
 [module]
 [[imports]]
-path = "github.com/bep/hugo-jslibs/alpinejs"
+path = "github.com/saderra/hugo-modules/alpinejs"
 ```
 
 Then add the script source in the head section of your template:
