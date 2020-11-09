@@ -4,13 +4,11 @@
 
 
 
-        {{ with .Scratch.Get "thumbail" }}
         <div class="">
           <a href="{{ .Permalink }}">
-            <img src='{{ .Scratch.Get "thumbail" }}' class="w-full" />
+            <img src='media/{{ .Scratch.Get "cardmast" }}' class="w-full" />
           </a>  
         </div>
-        {{ end }}
 
 
           
