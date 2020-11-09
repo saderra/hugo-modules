@@ -4,15 +4,11 @@
 
         <div class="">
           <a href="{{ .Permalink }}">
-            <img src='media/{{ .Scratch.Get "cardmast" }}' class="w-full" />
+            <img src='{{ .Scratch.Get "mediapath" }}{{ .Scratch.Get "cardmast" }}' class="w-full" />
           </a>  
         </div>
-
-
-          
-
-
-          <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
+       
+        <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
 
             <p class="text-gray-400 text-sm uppercase font-sans">
               {{ .Date.Format "January 2 2006" }}
