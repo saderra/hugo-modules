@@ -2,7 +2,9 @@
   <div class="md:flex-1 p-4">
       <div class="w-full">
           <div class="">
-              <img src="https://dummyimage.com/600x250/290029/ffffff" class="w-full" />
+            <a href="{{ .Permalink }}">
+              <img src="https://dummyimage.com/600x250/33283b/ffffff" class="w-full" />
+            </a>  
           </div>
 
           <p class="text-gray-400 text-base uppercase font-sans">
@@ -10,8 +12,13 @@
           </p>
 
           <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
+            <a href="{{ .Permalink }}">
               <h1 class="serif text-3xl">{{ .Title }}</h1>
-              <p class="md:mt-3">{{ .Summary }}</p>
+            </a>  
+            <p class="md:mt-3">{{ .Summary }}</p>
+
+            <a href="{{ .Permalink }}">Read More &raquo;</a>
+
           </div>
           <div class="bg-gray-100 border border-gray-200 px-4 py-4 sm:px-6">
             {{ $taxonomy := "categories" }} {{ with .Param $taxonomy }}
