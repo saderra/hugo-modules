@@ -4,12 +4,22 @@
           <div class="">
               <img src="https://dummyimage.com/600x250/290029/ffffff" class="w-full" />
           </div>
+
+          <p class="text-gray-400 text-base uppercase font-sans">
+            Date: {{ .Date.Format "January 2 2006" }}
+          </p>
+
           <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
               <h1 class="serif text-3xl">{{ .Title }}</h1>
               <p class="md:mt-3">{{ .Summary }}</p>
           </div>
           <div class="bg-gray-100 border border-gray-200 px-4 py-4 sm:px-6">
-          Categories &amp; Tags
+            {{ $taxonomy := "categories" }} {{ with .Param $taxonomy }}
+            {{ range $index, $category := . }} {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $category) -}}
+            <a href="{{ .Permalink }}">
+            <span class="inline-block pr-3 uppercase py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ $category | humanize }}</span></a>
+            {{- end -}} {{- end -}}
+        {{ end }}
           </div>
       </div>          
   
