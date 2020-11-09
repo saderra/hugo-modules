@@ -7,17 +7,21 @@
             </a>  
           </div>
 
-          <p class="text-gray-400 text-base uppercase font-sans">
+          
+
+          <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
+
+            <p class="text-gray-400 text-sm uppercase font-sans">
             Date: {{ .Date.Format "January 2 2006" }}
           </p>
 
-          <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
+
             <a href="{{ .Permalink }}">
               <h1 class="serif text-3xl">{{ .Title }}</h1>
             </a>  
-            <p class="md:mt-3">{{ .Summary }}</p>
+            <p class="my-3">{{ .Summary }}</p>
 
-            <a href="{{ .Permalink }}">Read More &raquo;</a>
+            <a href="{{ .Permalink }}" class="">Read More &raquo;</a>
 
           </div>
           <div class="bg-gray-100 border border-gray-200 px-4 py-4 sm:px-6">
