@@ -1,20 +1,17 @@
-<!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
-<div class="bg-white overflow-hidden shadow rounded-lg">
-    <div class="border-b border-gray-200 px-4 py-5 sm:px-6">
-      <!-- Content goes here -->
-      <!-- We use less vertical padding on card headers on desktop than on body sections -->
-      Image Here
-    </div>
-    <div class="px-4 py-5 sm:p-6">
-        {{ .Title }}
-        {{ .Summary }}
-      <!-- Content goes here -->
-    </div>
-    <div class="border-t border-gray-200 px-4 py-4 sm:px-6">
-      Categories &amp; Tags
-    </div>
-  </div>
+<div class="md:flex md:w-1/2 px-2 py-2">
+  <div class="md:flex-1 p-4">
+      <div class="w-full">
+          <div class="">
+              <img src="https://dummyimage.com/600x250/290029/ffffff" class="w-full" />
+          </div>
+          <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
+              <h1 class="serif text-3xl">{{ .Title }}</h1>
+              <p class="md:mt-3">{{ .Summary }}</p>
+          </div>
+          <div class="bg-gray-100 border border-gray-200 px-4 py-4 sm:px-6">
+          Categories &amp; Tags
+          </div>
+      </div>          
   
+  </div>
+</div>
