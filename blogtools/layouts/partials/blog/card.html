@@ -3,10 +3,14 @@
       <div class="w-full">
 
 
-
         <div class="">
           <a href="{{ .Permalink }}">
-            <img src='media/{{ .Scratch.Get "cardmast" }}' class="w-full" />
+
+            {{with .cardmast }}
+            <img src='media/{{ .cardmast }}' class="w-full" />
+            {{ else }}
+            <img src='media/cardmast.jpg' class="w-full" />
+            {{ end }}
           </a>  
         </div>
 
