@@ -12,12 +12,12 @@
           <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
 
             <p class="text-gray-400 text-sm uppercase font-sans">
-            Date: {{ .Date.Format "January 2 2006" }}
-          </p>
+              {{ .Date.Format "January 2 2006" }}
+            </p>
 
 
             <a href="{{ .Permalink }}">
-              <h1 class="serif text-3xl">{{ .Title }}</h1>
+              <h1 class="serif text-3xl my-2">{{ .Title }}</h1>
             </a>  
             <p class="my-3">{{ .Summary }}</p>
 
