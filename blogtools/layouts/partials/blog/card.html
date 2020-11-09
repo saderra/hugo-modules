@@ -1,14 +1,19 @@
 <div class="md:flex md:w-1/2 px-2 py-2">
   <div class="md:flex-1 p-4">
       <div class="w-full">
-          <div class="">
-
-            <a href="{{ .Permalink }}">
-              <img src="{{ .context.thumbnail }}" class="w-full" />
-            </a>  
 
 
-          </div>
+
+        {{ with .Scratch.Get "thumbail" }}
+        <div class="">
+          <a href="{{ .Permalink }}">
+            <img src='.Scratch.Get "thumbail"' class="w-full" />
+          </a>  
+        </div>
+        {{ end }}
+
+
+          
 
 
           <div class="px-4 py-5 sm:p-6 border-l border-r border-gray-200">
