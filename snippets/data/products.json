@@ -1,0 +1,22 @@
+{
+    "products": {
+        "1": {
+            "title": "Product Title",
+            "position": 100,
+            "short": "short content",
+            "long": "long content"
+        },
+        "2": {
+            "title": "Product Title",
+            "position": 200,
+            "short": "short content",
+            "long": "long content"
+        },
+        "3": {
+            "title": "Product Title",
+            "position": 300,
+            "short": "short content",
+            "long": "long content"
+        }
+    }
+}

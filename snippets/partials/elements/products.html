@@ -1,0 +1,7 @@
+{{ $dataset := .Params.dataset }}
+{{ $data := index .Site.Data.products $dataset }}
+
+{{ range $data, $element := sort $data.products "position" "asc" }}
+<h2>{{ .title }}</h2>>
+<p>{{ .short }}</p>
+{{ end }}
