@@ -1,0 +1,12 @@
+<a href="/" >Home</a>
+
+{{ with .Site.Menus.utility }}
+{{ range . }}
+{{ $active := eq $.RelPermalink (.URL | relLangURL) }}
+  <a href="{{ .URL | relLangURL }}"
+  {{ if $active }} class="active" aria-current="true"
+  {{ else }} class=""
+  {{ end }}
+  >{{ .Name }}</a>
+{{ end }}
+{{ end }}
