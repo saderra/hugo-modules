@@ -4,11 +4,14 @@
 		"devDependencies": {}
 	},
 	"dependencies": {
+		"@tailwindcss/aspect-ratio": "^0.2.0",
+		"@tailwindcss/forms": "^0.2.1",
 		"autoprefixer": "^10.0.2",
 		"postcss": "^8.1.10",
 		"tailwindcss": "^2.0.1"
 	},
 	"devDependencies": {
+		
 		"@tailwindcss/typography": "^0.2.0",
 		"autoprefixer": "~9.7.6",
 		"postcss": "^8.0.9",
