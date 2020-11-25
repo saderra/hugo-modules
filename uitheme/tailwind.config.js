@@ -1,5 +1,5 @@
 const theme = require('tailwindcss/defaultTheme');
-const typography = require('@tailwindcss/typography');
+const twtype = require('@tailwindcss/typography');
 const twforms = require('@tailwindcss/forms');
 const twaspect = require('@tailwindcss/aspect-ratio');
 
