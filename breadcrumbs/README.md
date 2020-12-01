@@ -18,6 +18,8 @@ Add the following to your HUGO config file:
 To call the breadcrums into your template, typically `partial/header.html` use the following snippet, omitting the "if" conditional if you'd also like the modules to show up on your homepage.
 
 ```
+{{ .Scratch.Set "bgcolor" "bg-deep" }}
+{{ .Scratch.Set "textcolor" "text-gray-900" }}
 {{ if not .IsHome }}
   {{ partial "components/breadcrumb" . }}
 {{ end }}
