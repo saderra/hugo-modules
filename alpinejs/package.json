@@ -4,10 +4,10 @@
 		"devDependencies": {}
 	},
 	"dependencies": {
-        "alpinejs": "^2.7.3"
+        "alpinejs": "^2.8.0"
        },
 	"devDependencies": {
 	},
 	"name": "saderra-hugo-alpinejs",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
